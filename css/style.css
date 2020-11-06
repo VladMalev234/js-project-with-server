@@ -1,0 +1,13 @@
+.user-cabinet-hesder {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.update {
+    margin: 20px;
+}
+
+#signup-submit {
+    text-decoration: none;
+    outline: none;
+}
