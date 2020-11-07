@@ -7,6 +7,8 @@
   });
 
 M.updateTextFields();
+
+
 let userEmail = getCookie('email')
 // console.log(userEmail);
 ajax('core/get_user_data.php', 'POST', getUserData, {'email': userEmail})

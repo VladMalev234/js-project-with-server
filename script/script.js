@@ -28,36 +28,30 @@ document.querySelector('#signup-submit').onclick = function(event)  {
     function signup(result) {
         console.log(result);
         if(result == 2) {
-            alert('Заполните поля');
+            alert('fiel the field');
         } else if (result == 1) {
-            alert('Поздравляю. теперь можете войти');
+            alert('Congrats? you can pass');
         } else {
-            alert('Повторите позже');
+            alert('Try again later');
         }
     }
 }
 
-document.querySelector("#login-submit").onclick = function(event) {
-    event.preventDefault();
-
-    
+    document.querySelector("#login-submit").onclick = function(event) {
+    event.preventDefault();    
     let email = document.querySelector('#login-email').value;
-    let pass = document.querySelector('#login-pass').value;
-
- 
+    let pass = document.querySelector('#login-pass').value; 
     // формируем мссив и вносим туда данные для передачи в ajax.js функцию requestDatta()
     let data = {
         "email": email,
         "pass": pass,
-        
-       
     }
 
     ajax('core/login.php', 'post', login, data);
 
     function login(result) {
         if(result == 2) {
-            alert('Заполните поля');
+            alert('Put field');
         } else if (result == 0) {
             alert('User, not found');
         } else {

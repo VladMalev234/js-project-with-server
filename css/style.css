@@ -11,3 +11,10 @@
     text-decoration: none;
     outline: none;
 }
+.site-header{ 
+ border-bottom: 1px solid #26a69a;
+}
+
+.site-title{
+     font-size: 24px;
+}

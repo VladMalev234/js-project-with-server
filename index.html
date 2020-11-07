@@ -3,30 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link  rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link  rel="stylesheet" href="css/style.css">
+    <title>Site</title>
 </head>
 <body>
-    <form method="POST">
-        <div>name: <input type="text" name="name" id="signup-name"></div>
-        <div>password: <input type="text" name="pass" id="signup-pass"></div>
-        <div>email: <input type="text" name="email" id="signup-email"></div>
-        <div>birthday: <input type="text" name="birthday" id="signup-birthday"></div>
-        <div>sex:
-            <div> <input type="radio" value="male" name="sex" checked  class="sex">male</div>
-            <div><input type="radio" value="female" name="sex" class="sex">female</div>
-            <div><input type="radio" value="other" name="sex" class="sex">other</div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col l10">
+                    <h1 class="site-title center-align">
+                        Our project
+                    </h1>
+                </div>
+                <div class="col l2">
+
+                </div>
+
+            </div>
         </div>
-        <input type="submit" value="send" id="signup-submit">
+    </header>
+
+
+    <form class="container">
+        <div class="row">
+            <div class="input-field col l12">
+                <input placeholder="Your name" name="name" id="signup-name" type="text" >
+                <label for="signup-name">Name</label>
+            </div>
+            <div class="input-field col l12">
+                <input  name="pass" id="signup-pass" type="text" >
+                <label for="signup-pass">Password</label>
+            </div>
+            <div class="input-field col l12">
+                <input placeholder="Your email" name="email" id="signup-email" type="text">
+                <label for="signup-email">Email</label>
+            </div>
+            <div class="input-field col l12">
+                <input placeholder="Your birthday date" name="email" id="signup-birthday" class="datepicker" type="text">
+                <label for="signup-birthday">Birthday</label>
+            </div>
+            <div class="col l12"> sex:
+                <label class="col l7">
+                    <input type="radio" value="male" name="sex" checked  class="sex with-gap">
+                    <span>male</span>
+                </label>
+                <label class="col l7">
+                    <input type="radio" value="female" name="sex"   class="sex with-gap">
+                    <span>female</span>
+                </label>
+                <label class="col l7">
+                    <input type="radio" value="other" name="sex"   class="sex with-gap">
+                    <span>other</span>
+                </label>
+            </div>
+
+            <div class="col l12 right-align">
+                <button id="signup-submit" class="waves-effect waves-light btn blue lighten-1">Registration</button>
+            </div>
+        </div>
+
     </form>
 <hr>
 
-<form method="POST"
-    <div>email: <input type="text" name="email" id="login-email" value="vova@gmail.com"></div>
-    <div>password: <input type="text" name="pass" id="login-pass" value="qw123"></div>
-    <input type="submit" value="login" id="login-submit">
+
+
+<form >
+    <div class="row">
+        <div class="input-field col l12">
+            <input placeholder="Your email" name="email" id="login-email" type="text" class="validate" value="vova@gmail.com">
+            <label for="login-email">Email</label>
+        </div>
+        <div class="input-field col l12">
+            <input  name="pass" id="login-pass" type="text"  value="qw123">
+            <label for="login-pass">Password</label>
+        </div>
+        <div class="col l12 right-align">
+            <button id="login-submit" class="waves-effect waves-light btn blue lighten-1"> Login</button>
+        </div>
+    </div>
 </form>
 
+    <script src="js/materialize.min.js"></script>
     <script src="script/ajaxs.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/main.js"></script>
 </body>
 </html>
