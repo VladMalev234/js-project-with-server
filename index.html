@@ -20,72 +20,106 @@
                     </h1>
                 </div>
                 <div class="col l2">
-
+                    <button class="modal-show  waves-effect waves-light btn" data-modal="#sign-up">Sign-in</button>
+                    <button class="modal-show  waves-effect waves-light btn" data-modal="#log-in">Login</button>
+                    
                 </div>
 
             </div>
         </div>
     </header>
 
+    <div class="modal-wrap hide" id="sign-up">
+        <div class="modal-project sign-up-modal">
+            <div class="form__slider">
+                <div class="left-50">
+                    <form class="">
+                        <div class="row">
+                            <div class="input-field col l6">
+                                <input placeholder="Your name" name="name" id="signup-name" type="text" >
+                                <label for="signup-name">Name</label>
+                            </div>
+                            <div class="input-field col l6">
+                                <input  name="pass" id="signup-pass" type="text" >
+                                <label for="signup-pass">Password</label>
+                            </div>
+                            <div class="input-field col l6">
+                                <input placeholder="Your email" name="email" id="signup-email" type="text">
+                                <label for="signup-email">Email</label>
+                            </div>
+                            <div class="input-field col l6">
+                                <input placeholder="Your birthday date" name="email" id="signup-birthday" class="datepicker" type="text">
+                                <label for="signup-birthday">Birthday</label>
+                            </div>
+                            <div class="col l12"> sex:
+                                <p>
+                                    <label >
+                                        <input type="radio" value="male" name="sex" checked  class="sex with-gap">
+                                        <span>male</span>
+                                    </label>
+                                    <label class=>
+                                        <input type="radio" value="female" name="sex"   class="sex with-gap">
+                                        <span>female</span>
+                                    </label>
+                                    <label class="">
+                                        <input type="radio" value="other" name="sex"   class="sex with-gap">
+                                        <span>other</span>
+                                    </label>
+                                </p>
+                            </div>
 
-    <form class="container">
-        <div class="row">
-            <div class="input-field col l12">
-                <input placeholder="Your name" name="name" id="signup-name" type="text" >
-                <label for="signup-name">Name</label>
-            </div>
-            <div class="input-field col l12">
-                <input  name="pass" id="signup-pass" type="text" >
-                <label for="signup-pass">Password</label>
-            </div>
-            <div class="input-field col l12">
-                <input placeholder="Your email" name="email" id="signup-email" type="text">
-                <label for="signup-email">Email</label>
-            </div>
-            <div class="input-field col l12">
-                <input placeholder="Your birthday date" name="email" id="signup-birthday" class="datepicker" type="text">
-                <label for="signup-birthday">Birthday</label>
-            </div>
-            <div class="col l12"> sex:
-                <label class="col l7">
-                    <input type="radio" value="male" name="sex" checked  class="sex with-gap">
-                    <span>male</span>
-                </label>
-                <label class="col l7">
-                    <input type="radio" value="female" name="sex"   class="sex with-gap">
-                    <span>female</span>
-                </label>
-                <label class="col l7">
-                    <input type="radio" value="other" name="sex"   class="sex with-gap">
-                    <span>other</span>
-                </label>
-            </div>
+                            <div class="col l12"> 
+                                <p class="read__rules">
+                                Read rules
+                                </p>
+                            </div>
 
-            <div class="col l12 right-align">
-                <button id="signup-submit" class="waves-effect waves-light btn blue lighten-1">Registration</button>
+                            <div class="col l12 right-align">
+                                <button id="signup-submit" class="waves-effect waves-light btn blue lighten-1">Registration</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="right-50">
+                    <p class="read__rules-back">Close rules</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero consequatur ducimus sunt sapiente</p>
+                    <p> soluta! Velit recusandae, ratione voluptatibus, dolor vel, cum ipsa vero mollitia nisi nobis odio tempora totam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero consequatur ducimus sunt sapiente</p>
+                    <p> soluta! Velit recusandae, ratione voluptatibus, dolor vel, cum ipsa vero mollitia nisi nobis odio tempora totam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero consequatur ducimus sunt sapiente</p>
+                    <p> soluta! Velit recusandae, ratione voluptatibus, dolor vel, cum ipsa vero mollitia nisi nobis odio tempora totam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero consequatur ducimus sunt sapiente</p>
+                    <p> soluta! Velit recusandae, ratione voluptatibus, dolor vel, cum ipsa vero mollitia nisi nobis odio tempora totam.</p>
+                    <p class="read__rules-back">Close rules</p>
+                </div>
             </div>
-        </div>
-
-    </form>
-<hr>
-
-
-
-<form >
-    <div class="row">
-        <div class="input-field col l12">
-            <input placeholder="Your email" name="email" id="login-email" type="text" class="validate" value="vova@gmail.com">
-            <label for="login-email">Email</label>
-        </div>
-        <div class="input-field col l12">
-            <input  name="pass" id="login-pass" type="text"  value="qw123">
-            <label for="login-pass">Password</label>
-        </div>
-        <div class="col l12 right-align">
-            <button id="login-submit" class="waves-effect waves-light btn blue lighten-1"> Login</button>
         </div>
     </div>
-</form>
+
+
+
+
+<div class="modal-wrap hide" id="log-in">
+    <div class="modal-project">
+        <form >
+            <div class="row">
+                <div class="input-field col l12">
+                    <input placeholder="Your email" name="email" id="login-email" type="text" class="validate" value="vova@gmail.com">
+                    <label for="login-email">Email</label>
+                </div>
+                <div class="input-field col l12">
+                    <input  name="pass" id="login-pass" type="text"  value="qw123">
+                    <label for="login-pass">Password</label>
+                </div>
+                <div class="col l12 right-align">
+                    <button id="login-submit" class="waves-effect waves-light btn blue lighten-1"> Login</button>
+                </div>
+            </div>
+        </form>
+        <button class="modal-project-close btn-floating btn waves-effect waves-light blue lighten-1"><i class="material-icons">close</i></button></button>
+    </div>
+</div>
 
     <script src="js/materialize.min.js"></script>
     <script src="script/ajaxs.js"></script>
