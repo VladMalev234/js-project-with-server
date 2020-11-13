@@ -63,12 +63,19 @@ document.querySelector('.read__rules').onclick = function () {
  }
  
  document.querySelectorAll('.read__rules-back').forEach(function(element) {
-     
      element.onclick = closeSlider;
   });
  
- 
- 
-  function closeSlider() {
-  document.querySelector('.form__slider').style.marginLeft = '0';
-  }
+function closeSlider() {
+document.querySelector('.form__slider').style.marginLeft = '0';
+}
+
+
+document.querySelector('#agree-rules').onchange = function() {
+    if(this.checked) {
+        console.log('dsfgh');
+        document.querySelector("#signup-submit").classList.remove('disabled');
+    } else {
+        document.querySelector("#signup-submit").classList.add('disabled');
+    }
+}

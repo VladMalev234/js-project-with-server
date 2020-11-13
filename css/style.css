@@ -13,10 +13,12 @@
 }
 .site-header{ 
  border-bottom: 1px solid #26a69a;
+ padding: 25px;
 }
 
 .site-title{
      font-size: 24px;
+     margin: 0;
 }
 
 /* ----------------------- */
@@ -46,6 +48,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    z-index: 3;
 }
 
 .modal-project {
@@ -73,15 +76,13 @@
     right: 0;
     top: 0;
     transform: translate(50%,-20%);
+    z-index: 3;
 }
 
 /* ============== */
 
 .form__slider {
     width: 700px;
-    /* height: 340px; */
-    /* background: bisque; */
-    /* position: absolute; */
     margin-left: 0;
     transition: all ease 1s ;
    
@@ -109,10 +110,12 @@
 
 .read__rules-back {
     cursor: pointer;
-    /* background-color: yellow; */
 }
 
 .sign-up-modal {
     width: 370px;
+}
+
+.form-slider-wrap {
     overflow: hidden;
 }

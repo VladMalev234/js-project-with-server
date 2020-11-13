@@ -48,7 +48,7 @@
                 </div>
                 <div class="col l12"> sex:
                     <label class="col l7">
-                        <input type="radio" value="male" name="sex" checked  class="sex with-gap">
+                        <input type="radio" value="male" name="sex"  class="sex with-gap">
                         <span>male</span>
                     </label>
                     <label class="col l7">

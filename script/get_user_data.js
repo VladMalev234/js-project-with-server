@@ -60,13 +60,14 @@ document.querySelector('#signup-submit').onclick = function (event) {
     for(let i = 0; i < sex.length; i++) {
         // console.log(sex.length);
         if(sex[i].checked) {
-            sex = sex[i].value;
+            sex = sex[i].value + sex.checked;
             break;
         }
     }
+    sex.classList.add('checked');
   
   let updateData = {
-      "email" : userEmail,
+      "email": userEmail,
       "name": document.querySelector('#signup-name').value,
       "pass": document.querySelector('#signup-pass').value,
       "birthday": document.querySelector('#signup-birthday').value,

@@ -10,28 +10,29 @@
     <title>Site</title>
 </head>
 <body>
-
     <header class="site-header">
         <div class="container">
             <div class="row">
-                <div class="col l10">
+                <div class="col l8">
                     <h1 class="site-title center-align">
                         Our project
                     </h1>
                 </div>
                 <div class="col l2">
                     <button class="modal-show  waves-effect waves-light btn" data-modal="#sign-up">Sign-in</button>
-                    <button class="modal-show  waves-effect waves-light btn" data-modal="#log-in">Login</button>
-                    
                 </div>
-
+                <div class="col l2">
+                    <button class="modal-show  waves-effect waves-light btn" data-modal="#log-in">Login</button>
+                </div>
             </div>
         </div>
     </header>
 
     <div class="modal-wrap hide" id="sign-up">
         <div class="modal-project sign-up-modal">
+            <div class="form-slider-wrap">
             <div class="form__slider">
+                <button class="modal-project-close btn-floating btn waves-effect waves-light blue lighten-1"><i class="material-icons">close</i></button>
                 <div class="left-50">
                     <form class="">
                         <div class="row">
@@ -68,14 +69,22 @@
                                 </p>
                             </div>
 
-                            <div class="col l12"> 
-                                <p class="read__rules">
-                                Read rules
+                            <div class="col l6"> 
+                                  <p>
+                                    <label>
+                                      <input type="checkbox" id="agree-rules">
+                                      <span>Agree rules</span>
+                                    </label>
+                                  </p>
+                            </div>
+                            <div class="col l6"> 
+                                <p class="read__rules" id="check-rules">
+                                    READ
                                 </p>
                             </div>
 
                             <div class="col l12 right-align">
-                                <button id="signup-submit" class="waves-effect waves-light btn blue lighten-1">Registration</button>
+                                <button id="signup-submit" class="waves-effect waves-light disabled btn blue lighten-1">Registration</button>
                             </div>
                         </div>
 
@@ -94,6 +103,7 @@
                     <p class="read__rules-back">Close rules</p>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 
@@ -117,7 +127,7 @@
                 </div>
             </div>
         </form>
-        <button class="modal-project-close btn-floating btn waves-effect waves-light blue lighten-1"><i class="material-icons">close</i></button></button>
+        <button class="modal-project-close btn-floating btn waves-effect waves-light blue lighten-1"><i class="material-icons">close</i></button>
     </div>
 </div>
 

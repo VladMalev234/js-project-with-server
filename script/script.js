@@ -28,11 +28,12 @@ document.querySelector('#signup-submit').onclick = function(event)  {
     function signup(result) {
         console.log(result);
         if(result == 2) {
-            alert('fiel the field');
+            M.toast({html: 'fiel the field'});
         } else if (result == 1) {
-            alert('Congrats? you can pass');
+            M.toast({html: 'Congrats! you can pass'});
+            document.querySelector('.modal-wrap').classList.add('hide');
         } else {
-            alert('Try again later');
+            M.toast({html: 'Try again later'});
         }
     }
 }
@@ -51,9 +52,9 @@ document.querySelector('#signup-submit').onclick = function(event)  {
 
     function login(result) {
         if(result == 2) {
-            alert('Put field');
+            M.toast({html: 'Put field'});
         } else if (result == 0) {
-            alert('User, not found');
+            M.toast({html: 'User, not found'});
         } else {
             console.log(result);
             result = JSON.parse(result);
